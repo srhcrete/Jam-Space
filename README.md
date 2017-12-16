@@ -27,4 +27,4 @@ Jam Space is a site where musicians can manage their own tours by booking servic
 * Tour route mapping service.
 
 ## Schema
-![Database Schema](images/jamspace_schema.png)
+![Database Schema](images/jamspace_schema_v1.png)
