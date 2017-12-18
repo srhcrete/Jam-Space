@@ -27,4 +27,4 @@ myTour is a site where musicians can manage their own tours by booking services 
 * Tour route mapping service.
 
 ## Schema
-![Database Schema](assets/images/myTour_schema_v2.png)
+![Database Schema](app/assets/images/myTour_schema_v2.png)
