@@ -1,24 +1,31 @@
-# README
+# myTour
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+myTour is a site where musicians can manage their own tours by booking services through providers along tour routes. Bands can source jam spaces, crash spaces, gear, vehicles, experienced drivers, backline technicians, and merchandise sellers. myTour puts the musician in control.
 
-Things you may want to cover:
+## MVP User Stories
 
-* Ruby version
+#### As a Provider I can...
+* create my own profile and upload images.
+* Post open Bookings with location, images, and tags.
+* Edit and Reschedule bookings and Delete completed bookings.
 
-* System dependencies
+#### As a Band I can...
+* create my own profile and upload images.
+* Request bookings from the open bookings list.
+* Book a service and pay the provider.
 
-* Configuration
+## Booking Features
+* When a booking has been approved and scheduled, the status will update to booked.
+* When the scheduled date has passed, the booking status will update to completed.
 
-* Database creation
 
-* Database initialization
+## Future Features
+* Band and providers can leave ratings/reviews for each other.
+* A service for messages or automatic email between bands and providers.
+* PayPal or other payment handler.
+* Maps with markers for available or scheduled bookings.
+* Tour route mapping service.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Schema
+![Database Schema](assets/images/myTour_schema_v2.png)
+Â
