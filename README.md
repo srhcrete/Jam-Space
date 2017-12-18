@@ -1,6 +1,6 @@
-# Jam Space
+# myTour
 
-Jam Space is a site where musicians can manage their own tours by booking services through providers along tour routes. Bands can source jam spaces, crash spaces, gear, vehicles, experienced drivers, backline technicians, and merchandise sellers.
+myTour is a site where musicians can manage their own tours by booking services through providers along tour routes. Bands can source jam spaces, crash spaces, gear, vehicles, experienced drivers, backline technicians, and merchandise sellers.
 
 ## MVP User Stories
 
