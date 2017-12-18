@@ -28,4 +28,3 @@ myTour is a site where musicians can manage their own tours by booking services 
 
 ## Schema
 ![Database Schema](assets/images/myTour_schema_v2.png)
-Â
