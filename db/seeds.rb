@@ -20,7 +20,8 @@ end
       location: Faker::Dune.planet,
       description: Faker::Dune.saying,
       members: [Faker::Lorem.words(4)],
-      user_id: user.id
+      user_id: user.id,
+      photo: Faker::LoremPixel.image
         )
 end
 
