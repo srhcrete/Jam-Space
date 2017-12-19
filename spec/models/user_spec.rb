@@ -1,5 +1,7 @@
 require 'rails_helper'
 
-# RSpec.describe User, type: :model do
-#   pending "add some examples to (or delete) #{__FILE__}"
-# end
+describe User, 'association' do
+  it { should have_many :bookings }
+  it { should have_many :bands }
+  it { should have_many :services }
+end
