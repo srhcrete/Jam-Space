@@ -1,4 +1,4 @@
 class Review < ApplicationRecord
-  belongs_to :bands
+  belongs_to :band
   belongs_to :service
 end
