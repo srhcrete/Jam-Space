@@ -17,6 +17,11 @@
  @import 'bootstrap';
  @import 'home';
 
+$dark-grey: #4f5566;
+$light-grey: #a6a9b2;
+$highlight: #7db6e8;
+$border: #f2e8e8;
+
  body {
    margin: 0;
  }
@@ -33,4 +38,7 @@
 
 #body {
   overflow-y: scroll;
+  background-image: url(no_music_no_life.jpeg);
+  background-position: center center;
+  color: $light-grey;
 }
