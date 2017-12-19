@@ -3,11 +3,24 @@
   <head>
     <title>MyTour</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <header>
+    <nav class='navbar navbar-expand-sm bg-dark navbar-dark clearfix'>
+      <%= link_to('myTour', root_path, class: 'myTour') %>
+      <%= link_to('bands', bands_path) %>
+      <ul class="nav nav-pills">
+        <% if current_user %>
+          <li><%= link_to current_user.name, edit_user_registration_path %></li>
+          <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to 'Login', new_user_session_path %></li>
+          <li><%= link_to 'Register', new_user_registration_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </header>
   <body>
     <%= yield %>
   </body>
