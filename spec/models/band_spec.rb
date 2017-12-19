@@ -1,5 +1,15 @@
 require 'rails_helper'
 
-RSpec.describe Band, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe Band, 'association' do
+  it { should belong_to :user }
+  it { should have_many :bookings }
+  it { should have_many :tags }
 end
+# 
+# describe Band, '' do
+#
+# end
+#
+# describe Band, '' do
+#
+# end
