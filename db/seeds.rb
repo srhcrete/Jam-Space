@@ -9,6 +9,7 @@ User.destroy_all
           description: Faker::Dune.quote,
           email: Faker::Internet.email,
           password: Faker::Internet.password(8),
+          avatar: Faker::Avatar.image("my-own-slug", "50x50")
         )
 end
 
