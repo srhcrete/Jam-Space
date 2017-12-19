@@ -1,12 +1,12 @@
-class DeviseCreateBands < ActiveRecord::Migration[5.1]
+class DeviseCreateUsers < ActiveRecord::Migration[5.1]
   def change
-    create_table :bands do |t|
+    create_table :users do |t|
       ## Database authenticatable
-      t.string :name
-      t.integer :number_of_members
-      t.text :members, array: true, default: []
-      t.string :home
       t.string :username
+      t.string :name
+      t.integer :age
+      t.string :location
+      t.text :description
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
@@ -39,9 +39,9 @@ class DeviseCreateBands < ActiveRecord::Migration[5.1]
       t.timestamps null: false
     end
 
-    add_index :bands, :email,                unique: true
-    add_index :bands, :reset_password_token, unique: true
-    # add_index :bands, :confirmation_token,   unique: true
-    # add_index :bands, :unlock_token,         unique: true
+    add_index :users, :email,                unique: true
+    add_index :users, :reset_password_token, unique: true
+    # add_index :users, :confirmation_token,   unique: true
+    # add_index :users, :unlock_token,         unique: true
   end
 end
