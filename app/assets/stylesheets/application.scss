@@ -33,7 +33,14 @@ $border: #f2e8e8;
 }
 
 #header{
-  flex-shrink: 0
+  flex-shrink: 0;
+  a {
+  color: $dark-grey;
+  padding: 10px;
+  }
+  a:hover {
+    background-color: $light-grey;
+  }
 }
 
 #body {
