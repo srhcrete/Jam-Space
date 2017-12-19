@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :provider do
+  factory :service do
     
   end
 end
