@@ -5,11 +5,3 @@ describe Band, 'association' do
   it { should have_many :bookings }
   it { should have_many :tags }
 end
-# 
-# describe Band, '' do
-#
-# end
-#
-# describe Band, '' do
-#
-# end
