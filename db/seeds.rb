@@ -9,7 +9,7 @@ User.destroy_all
           description: Faker::Dune.quote,
           email: Faker::Internet.email,
           password: Faker::Internet.password(8),
-          avatar: Faker::Avatar.image("my-own-slug", "50x50")
+          avatar: File.open(File.join(Rails.root, 'app', 'assets', 'images', 'avatar', "avatar#{rand(17)}.png"))
         )
 end
 
@@ -21,7 +21,7 @@ end
       description: Faker::Dune.saying,
       members: [Faker::Lorem.words(4)],
       user_id: user.id,
-      photo: Faker::LoremPixel.image
+      photo: File.open(File.join(Rails.root, 'app', 'assets', 'images', 'band', "band#{rand(17)}.jpeg"))
         )
 end
 
@@ -36,7 +36,7 @@ end
       longitude: Faker::Number.decimal(4),
       latitude: Faker::Number.decimal(4),
       user_id: user.id,
-      image: Faker::LoremPixel.image
+      image: File.open(File.join(Rails.root, 'app', 'assets', 'images', 'service', "service#{rand(13)}.jpeg"))
         )
 end
 

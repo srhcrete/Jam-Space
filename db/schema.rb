@@ -25,10 +25,6 @@ ActiveRecord::Schema.define(version: 20171219230901) do
     t.string "photo_content_type"
     t.integer "photo_file_size"
     t.datetime "photo_updated_at"
-    t.string "image_file_name"
-    t.string "image_content_type"
-    t.integer "image_file_size"
-    t.datetime "image_updated_at"
     t.index ["user_id"], name: "index_bands_on_user_id"
   end
 
@@ -63,6 +59,10 @@ ActiveRecord::Schema.define(version: 20171219230901) do
     t.datetime "updated_at", null: false
     t.float "latitude"
     t.float "longitude"
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
     t.index ["user_id"], name: "index_services_on_user_id"
   end
 
