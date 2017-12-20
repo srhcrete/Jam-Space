@@ -35,7 +35,8 @@ end
       available_to: Faker::Date.between(Date.today, 1.year.from_now),
       longitude: Faker::Number.decimal(4),
       latitude: Faker::Number.decimal(4),
-      user_id: user.id
+      user_id: user.id,
+      image: Faker::LoremPixel.image
         )
 end
 
