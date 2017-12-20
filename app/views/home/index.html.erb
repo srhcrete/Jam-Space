@@ -10,7 +10,7 @@
   <div class='row service_row'>
     <% @services.each do |service| %>
     <div class='service_div'>
-      <%= image_tag(service.image, class: "img-responsive") %>
+      <img><%= image_tag service.image.url(:medium) %></img>
       <h3><%= service.name %></h3>
       <div><%= sanitize(service.description) %></div>
       <div><%= number_to_currency(service.price) %></div>

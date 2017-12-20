@@ -1,4 +1,6 @@
 User.destroy_all
+Service.destroy_all
+Band.destroy_all
 
 20.times do
   User.create!(
