@@ -1,1 +1,21 @@
 <h1>Home!!!</h1>
+  <div id="banner">
+  <h1>myTour</h1>
+</div>
+<div class="container">
+  <h2>Welcome to myTour, we put bands in control.</h2>
+  <h2>Book services to support your own tour</h2>
+</div>
+<div class="container">
+  <div class='row service_row'>
+    <% @services.each do |service| %>
+    <div class='service_div'>
+      <%= image_tag(service.image, class: "img-responsive") %>
+      <h3><%= service.name %></h3>
+      <div><%= sanitize(service.description) %></div>
+      <div><%= number_to_currency(service.price) %></div>
+      <%= button_to 'Book this Service', new_booking_path(service_id: service), class: 'btn btn-dark btn-sm', remote: true %>
+    </div>
+    <% end %>
+  </div>
+</div>
