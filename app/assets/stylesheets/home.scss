@@ -4,30 +4,69 @@
 
 @import "bootstrap";
 
-
-.service_div {
-  background: rgba(100, 100, 100, 0.80);
-  margin: 3px;
+#banner {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
 }
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 1001px) and (max-width: 1500px) {
+.services {
+  flex-grow: 1;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: center;
+}
+
+.service_div {
+  flex-grow: 1;
+  text-align: center;
+  background: rgba(100, 100, 100, 0.80);
+  margin: 5px;
+}
+
+.service_div img {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+@media (min-width: 2500px) and (max-width: 3500px) {
   .service_div {
-      display: inline;
-      height: auto !important;
-      width: 25% !important;
+    display: inline;
+    height: auto !important;
+    width: 18% !important;
   }
-  .row {
-    margin-right: -30% !important;
-    margin-left: 1% !important;
+}
+
+@media (min-width: 2000px) and (max-width: 2500px) {
+  .service_div {
+    display: inline;
+    height: auto !important;
+    width: 20% !important;
+  }
+ }
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1500px) and (max-width: 2000px) {
+  .service_div {
+    display: inline;
+    height: auto !important;
+    width: 22% !important;
+  }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .service_div {
+    display: inline;
+    height: auto !important;
+    width: 25% !important;
   }
  }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 1000px) {
+@media (min_width: 600px) and (max-width: 1000px) {
   .service_div {
-      height: auto !important;
-      width: 48%
+    height: auto !important;
+    width: 48%
   }
  }
 
