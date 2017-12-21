@@ -22,8 +22,22 @@ $light-grey: #a6a9b2;
 $highlight: #7db6e8;
 $border: #f2e8e8;
 
+/* sets base style for each page */
+html {
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
  body {
    margin: 0;
+   position: relative;
+   z-index: 1;
+   overflow-y: scroll;
+   background-position: center center;
+   color: $light-grey;
+   justify-content: center;
  }
 
 #my-element {
@@ -43,12 +57,10 @@ $border: #f2e8e8;
   }
 }
 
-#body {
-  position: relative;
-  z-index: 1;
-  overflow-y: scroll;
+.body_home {
   background-image: url(no_music_no_life.jpeg);
-  background-position: center center;
-  color: $light-grey;
-  justify-content: center;
+}
+
+.body_bands {
+  background-image: url(concert.jpeg);
 }
