@@ -24,8 +24,8 @@
         </nav>
       </header>
     </div>
-    <div class="body_<%= params[:controller] %>">
-      <body>
+    <div id="body">
+      <body class="<%= params[:controller] %>">
         <%= yield %>
       </body>
     </div>
