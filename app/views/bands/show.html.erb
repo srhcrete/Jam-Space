@@ -1,0 +1,12 @@
+<div class="band_post">
+  <div id="band_title">
+    <h1><%= @band.name %></h1>
+  </div>
+  <div id="band_desc">
+    <%= @band.members.each do |member| %>
+      <li><%= member %></li>
+    <% end %>
+    <h1><%= @band.description %></h1>
+    <h1><%= @band.location%></h1>
+  </div>
+</div>

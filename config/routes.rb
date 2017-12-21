@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     resources :tags
     resources :reviews
   end
-  
+
   resources :bookings
+  resources :home
 end
