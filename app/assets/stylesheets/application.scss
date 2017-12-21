@@ -35,8 +35,8 @@ $border: #f2e8e8;
 #header{
   flex-shrink: 0;
   a {
-  color: $dark-grey;
-  padding: 10px;
+    color: $dark-grey;
+    padding: 10px;
   }
   a:hover {
     background-color: $light-grey;
@@ -44,10 +44,11 @@ $border: #f2e8e8;
 }
 
 #body {
+  position: relative;
+  z-index: 1;
   overflow-y: scroll;
   background-image: url(no_music_no_life.jpeg);
   background-position: center center;
   color: $light-grey;
-  text-shadow: 0.01px 0.01px 0.01px black;
   justify-content: center;
 }
