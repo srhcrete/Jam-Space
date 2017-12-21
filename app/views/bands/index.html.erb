@@ -1,1 +1,18 @@
-<h1>Bands!!!</h1>
+<div id="band_banner">
+  <h1>Bands</h1>
+</div>
+<div class="bands">
+  <div id="bands_head">
+    <h1>Band Listing</h1>
+  </div>
+  <div class='row band_row'>
+    <% @bands.each do |band| %>
+    <div class='band_div'>
+      <img class='band_img'><%= image_tag band.photo.url(:medium) %></img>
+      <h3><%= band.name %></h3>
+      <div><%= sanitize(band.description) %></div>
+      <%= button_to 'Contact', class: 'btn btn-dark btn-sm', remote: true %>
+    </div>
+    <% end %>
+  </div>
+</div>
