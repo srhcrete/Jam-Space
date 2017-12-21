@@ -10,7 +10,7 @@ Band.destroy_all
           location: Faker::Dune.planet,
           description: Faker::Dune.quote,
           email: Faker::Internet.email,
-          password: Faker::Internet.password(8),
+          password_digest: Faker::Internet.password(8),
           avatar: File.open(File.join(Rails.root, 'app', 'assets', 'images', 'avatar', "avatar#{rand(17)}.png"))
         )
 end

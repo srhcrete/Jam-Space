@@ -1,0 +1,17 @@
+<h1>Sign Up!</h1>
+
+<div class = 'card'>
+  <div class = 'card-body'>
+    <%= form_for @user do |f| %>
+      <%= f.label :email %>
+      <%= f.text_field :email, class: 'form-control'%>
+      <%= f.label 'Password:' %>
+      <%= f.password_field :password_digest, class: 'form-control' %>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control'%>
+      <%= f.label "Pick an image for your avatar."%>
+      <%= f.file_field :avatar, :class => "form-control" %>
+      <%= f.submit "Sign Up", class: 'btn btn-success form-control' %>
+    <% end %>
+  </div>
+</div>
