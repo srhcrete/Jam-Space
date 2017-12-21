@@ -9,7 +9,7 @@
     <% @bands.each do |band| %>
     <div class='band_div'>
       <img class='band_img'><%= image_tag band.photo.url(:medium) %></img>
-      <h3><%= band.name %></h3>
+      <h3><%= link_to band.name, band_path(band.id) %></h3>
       <div><%= sanitize(band.description) %></div>
       <%= button_to 'Contact', class: 'btn btn-dark btn-sm', remote: true %>
     </div>
