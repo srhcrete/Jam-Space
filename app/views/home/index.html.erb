@@ -11,7 +11,7 @@
     <% @services.each do |service| %>
     <div class='service_div'>
       <img class='service_img'><%= image_tag service.image.url(:medium) %></img>
-      <h3><%= service.name %></h3>
+      <h3><%= link_to service.name, service_path(service.id) %></h3>
       <div><%= sanitize(service.description) %></div>
       <div><%= number_to_currency(service.price) %></div>
       <%= button_to 'Book this Service', new_booking_path(service_id: service), class: 'btn btn-dark btn-sm', remote: true %>
