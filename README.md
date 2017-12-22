@@ -28,14 +28,14 @@ myTour is a site where musicians can manage their own tours by booking services 
 * Maps with markers for available or scheduled bookings.
 * Tour route mapping service.
 
-Set Up
-$ git clone this repository
-$ cd myTour
-$ bundle
-$ rake db:create
-$ rake db:migrate
-$ rake db:test:prepare (for testing environment)
-$ rake db:seed
-$ rake db:reset (to perform database create, migrate, & seed in single command)
-$ rails s to start the server, then navigate to localhost:3000 in your browser.
+## Set Up
+* $ git clone this repository
+* $ cd myTour
+* $ bundle
+* $ rake db:create
+* $ rake db:migrate
+* $ rake db:test:prepare (for testing environment)
+* $ rake db:seed
+* $ rake db:reset (to perform database create, migrate, & seed in single command)
+* $ rails s to start the server, then navigate to localhost:3000 in your browser.
 
