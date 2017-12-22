@@ -1,9 +1,9 @@
 class SessionsController < ApplicationController
 
   def create
-    @user = User.authenticate(params[:email], params[:password])
+    @user = User.authenticate(params[:email], params[:password_digest])
     if @user
-      session[:user_id] = user.id
+      session[:user_id] = @user.id
       flash[:notice] = 'You have sucessfully signed in.'
       redirect_to '/'
     else

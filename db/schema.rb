@@ -83,6 +83,7 @@ ActiveRecord::Schema.define(version: 20171219230901) do
     t.text "description"
     t.string "email", default: "", null: false
     t.string "password_digest", default: "", null: false
+    t.string "password_salt"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "avatar_file_name"
