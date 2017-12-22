@@ -54,13 +54,25 @@ $border: #f2e8e8;
 }
 
 body.home {
-  background-image: url(no_music_no_life.jpeg);
+  background: url(no_music_no_life.jpeg) no-repeat 50% 50% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body.bands {
-  background-image: url(concert.jpeg);
+  background: url(concert.jpeg) no-repeat 50% 50% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body.services {
-  background-image: url(amp.png)
+  background: url(amp.png) no-repeat 50% 50% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
