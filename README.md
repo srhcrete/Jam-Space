@@ -6,13 +6,11 @@ myTour is a site where musicians can manage their own tours by booking services 
 
 #### As a Provider I can...
 * create my own profile and upload images.
-* Post open Bookings with location, images, and tags.
-* Edit and Reschedule bookings and Delete completed bookings.
+
 
 #### As a Band I can...
 * create my own profile and upload images.
-* Request bookings from the open bookings list.
-* Book a service and pay the provider.
+
 
 ## Booking Features
 * When a booking has been approved and scheduled, the status will update to booked.
@@ -20,6 +18,10 @@ myTour is a site where musicians can manage their own tours by booking services 
 
 
 ## Future Features
+* Post open Bookings with location, images, and tags.
+* Edit and Reschedule bookings and Delete completed bookings.
+* Request bookings from the open bookings list.
+* Book a service and pay the provider.
 * Band and providers can leave ratings/reviews for each other.
 * A service for messages or automatic email between bands and providers.
 * PayPal or other payment handler.
